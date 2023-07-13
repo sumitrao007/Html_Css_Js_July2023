@@ -1,0 +1,37 @@
+div{
+    /* border: 2px solid red; */
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+.mydiv{
+    border: 6px dotted green;
+    padding: 10px;
+}
+
+#divId{
+    /* width: 250px; */
+    /* max-width: 100px; */
+    border: 3px solid red;
+    padding: 10px;
+    /* margin: 10px; */
+    margin: 2rem;
+    border-radius: 10px;
+
+}
+
+.myimg{
+    width: 250px;
+    height: 250px;
+    /* width: 50%; */
+    /* height: 50%; */
+    border-radius: 50%;
+    border: 2px groove red;
+    cursor: pointer;
+}
+
+.myimg:hover{
+    transform: scale(1.2);
+    box-shadow:20px 30px 10px green ;
+}
