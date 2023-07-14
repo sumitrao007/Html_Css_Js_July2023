@@ -1,0 +1,101 @@
+
+
+.main{
+    width: min(900px,100%-3rem);
+    margin-inline: auto;
+}
+
+table{
+    width: 100%;
+    background-color: rgb(253, 218, 218);
+    border-collapse: collapse;
+}
+
+caption,th,td{
+    padding: 1rem;
+}
+th{
+    background-color: black;
+    color: white;
+}
+th,td{
+    text-align: center;
+    border: 1px solid;
+}
+
+tr:nth-of-type(2n){
+    background-color: rgb(163, 78, 241,0.2);
+}
+caption{
+    
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: darkgray;
+    color: white;
+}
+
+.table-container{
+    max-width: 100%;
+    /* overflow-x: scroll; */
+    overflow-x: auto;
+}
+
+a:link,a:visited{
+    color: rgb(12, 207, 64);
+    text-decoration: none;
+}
+
+a:link:active,a:visited:active{
+    color: red;
+}
+
+@media(max-width:650px){
+    th,td{
+        text-align: left;
+    }
+    th{
+        display: none;
+    }
+    td{
+        /* display: block; */
+        
+        padding: 0.5rem 1rem;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 15ch auto;
+    }
+    td::before{
+       
+        font-weight: 700;
+        text-transform: uppercase;       
+                
+    }
+
+    td:first-child{
+        padding-top: 2rem;      
+       
+    }
+    td:last-child{
+        padding-bottom: 2rem;     
+        
+    }
+
+    td:nth-of-type(1)::before{
+        content: "Sr No";
+        margin-right: 0.5rem;
+    }
+    td:nth-of-type(2)::before{
+        content: "Product name";
+        margin-right: 0.5rem;
+    }
+    td:nth-of-type(3)::before{
+        content: "Product Price";
+        margin-right: 0.5rem;
+    }
+    td:nth-of-type(4)::before{
+        content: "Product Quantity";
+        margin-right: 0.5rem;
+    }   
+
+}

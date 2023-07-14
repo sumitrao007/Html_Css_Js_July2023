@@ -1,0 +1,29 @@
+.myimg{
+    width: 250px;
+    height: 250px;
+    opacity: 0.5;
+}
+
+/* .myimg:hover
+{
+    opacity: 1;
+    transform: scale(1.2);
+} */
+
+#imgId:hover
+{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.mydiv{
+    width: 350px;
+    height: 250px;
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    /* use for div centraing */
+    left: 50vw;
+    top: 50vh;
+    transform: translate(50%,50%);
+}
