@@ -1,0 +1,50 @@
+
+.container{
+    width: 550px;
+    border: 2px solid black;
+    margin-left: 250px;
+    margin-top: 50px;
+    position: relative;
+    overflow-y: scroll;
+}
+.box{
+    width: 150px;
+    height: 150px;
+}
+
+.box_purple{
+    background-color: purple;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    /* position: absolute;
+    left: 50px;
+    top: 50px; */
+
+}
+.box_orange{
+    background-color: orange;
+    position: static;
+    left: 50px;
+    /* position: absolute; */
+}
+.box_yellow{
+    background-color: yellow; 
+    position: absolute;
+    right: 25px;
+    /* left: 20px; */
+    z-index: -1;
+    /* top: 25px; */
+    bottom: 20px;
+  
+}
+.box_yellow::after{
+    content: "Hi Welcome";
+    color: black
+}
+.box_red{
+    background-color: red; 
+    position: fixed;
+    top: 10px;
+    
+}
