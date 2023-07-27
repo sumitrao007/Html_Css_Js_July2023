@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo1.css">
+</head>
+<body>
+    
+        <form action="" onsubmit="return validation()" >
+            <label for="">Username::&nbsp;&nbsp;</label>
+
+            <input type="text" onchange="onChange()" id="username" name="username1" placeholder="Enter the username">
+            <span id="username_error"></span>
+            <br><br>
+            <label for="">Password: </label>&nbsp;&nbsp;
+            <input type="password" 
+            placeholder="Enter the Password" 
+            id="password" name="password"
+            > 
+            <br>
+            <span id="passwordspan" ></span>
+            <br><br>
+
+            <label for="">Confirm Password: </label>&nbsp;&nbsp;
+            <input type="password" 
+            placeholder="Enter the Confirm Password" 
+            id="confirmpassword" name="confirmpassword"
+            > 
+            <br>
+            <span id="confirmpassspan"></span>
+            <br><br>
+
+            <br><br>
+            <button type="submit" >Submit</button>
+        </form>
+
+    <script src="demo1.js"></script>
+</body>
+</html>
